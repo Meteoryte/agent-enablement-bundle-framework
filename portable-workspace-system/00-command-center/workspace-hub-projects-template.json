@@ -1,0 +1,33 @@
+{
+  "$schema": "./workspace-hub-project-schema-template.json",
+  "projects": [
+    {
+      "id": "example-project",
+      "name": "Example Project",
+      "group": "Active",
+      "status": "Draft",
+      "stack": "Replace with stack",
+      "description": "Replace with one-line purpose.",
+      "path": "02-active-projects/example-project",
+      "staticPath": "02-active-projects/example-project/index.html",
+      "server": {
+        "label": "Local preview",
+        "cwd": "02-active-projects/example-project",
+        "command": "pnpm",
+        "args": ["run", "dev"],
+        "url": "http://127.0.0.1:5173/",
+        "port": 5173
+      },
+      "dependencies": [
+        {
+          "id": "example-dependency",
+          "label": "Example Dependency",
+          "description": "Optional local service the project needs.",
+          "external": true,
+          "candidatePorts": [8000],
+          "healthPath": "/health"
+        }
+      ]
+    }
+  ]
+}
