@@ -21,9 +21,12 @@ Use this checklist when applying the portable workspace system to a new repo or 
 ## Phase 3: Standards
 
 - Create `01-standards/`.
-- Add guidance asset type rules.
-- Add naming and document-location rules.
-- Add architecture/module boundary rules if the workspace has code.
+- Add the standards index: `01-standards/README.md`.
+- Add code naming, document naming, and guidance-asset naming protocols.
+- Add folder-structure and source-of-truth protocols.
+- Add rule hierarchy and safety boundaries.
+- Add credential/secret boundary, public export, tool/MCP adapter, validation evidence, memory continuity, and audit-corpus protocols.
+- Add prompt-pack execution, feature-gap closure, UI verification, reference-library curation, and API-readiness workflows as relevant.
 - Add protocol, workflow, prompt, template, and skill indexes as needed.
 
 ## Phase 4: Structure
@@ -48,6 +51,8 @@ Use this checklist when applying the portable workspace system to a new repo or 
 - Add registry checks for required fields.
 - Add naming checks where useful.
 - Add project-specific build/test/screenshot checks.
+- Add secret-like scanning before public export.
+- Document skipped validation and why.
 
 ## Phase 7: Optional Layers
 

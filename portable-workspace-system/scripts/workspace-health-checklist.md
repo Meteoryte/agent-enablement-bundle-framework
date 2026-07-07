@@ -10,6 +10,9 @@ Use this as a script spec or manual checklist.
 - Project registry exists and required fields are populated.
 - Priority board, next actions, roadmap, and decision log exist.
 - Standards folder exists and has guidance asset type rules.
+- Standards folder includes code naming, document naming, guidance-asset naming, folder-structure, and source-of-truth protocols.
+- Standards folder includes rule hierarchy, credential/secret boundary, public export, tool/MCP adapter, validation evidence, memory continuity, and audit-corpus protocols.
+- Standards folder includes prompt-pack execution, feature-gap closure, UI verification, reference-library curation, and API-readiness workflows when relevant to the workspace.
 - Active projects have README files.
 - Archive and backup folders are clearly marked as non-current.
 - Workflow folders have root and stage `CONTEXT.md` files.
@@ -18,6 +21,7 @@ Use this as a script spec or manual checklist.
 - Links in top-level docs resolve.
 - JSON/YAML files parse.
 - Script files pass syntax checks where practical.
+- Public export staging, if present, has passed secret-like scan and link check.
 
 ## Optional Checks
 

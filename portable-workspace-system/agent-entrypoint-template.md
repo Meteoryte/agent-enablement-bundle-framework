@@ -18,9 +18,10 @@ Primary users:
 
 1. Read the task router: `CONTEXT.md`.
 2. Read durable workspace rules in `_config/`.
-3. Read local project or folder docs before editing.
-4. Use the command center to find active projects, priorities, decisions, and next actions.
-5. Run the relevant validation interface before calling work complete.
+3. Read the standards index: `01-standards/README.md`.
+4. Read local project or folder docs before editing.
+5. Use the command center to find active projects, priorities, decisions, and next actions.
+6. Run the relevant validation interface before calling work complete.
 
 ## Global Rules
 
@@ -30,6 +31,7 @@ Primary users:
 - Prefer local folder instructions over broad rules inside that folder's scope, unless they conflict with safety or command-center decisions.
 - If required inputs are missing or contradict, stop and ask instead of inventing facts.
 - Use absolute dates in durable docs and decisions.
+- Follow the code, document, guidance-asset, source-of-truth, credential, export, and validation protocols in `01-standards/`.
 
 ## Source Of Truth
 

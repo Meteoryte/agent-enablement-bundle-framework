@@ -6,6 +6,8 @@ The copied source mirrors under `sources/` and `external-sources/` preserve orig
 
 For the neutral workspace-system framework, read [portable-workspace-operating-system.md](./portable-workspace-operating-system.md) and inspect [portable-workspace-system/](./portable-workspace-system/).
 
+For the concrete portable protocols, start at [portable-workspace-system/01-standards/README.md](./portable-workspace-system/01-standards/README.md). The source mirrors are allowed as examples when they are sanitized and the target project owner approves their use, but the standards folder is the copyable framework layer.
+
 ## Neutral Terms
 
 Use these terms when porting the bundle:
@@ -61,6 +63,22 @@ These layers should remain app/model agnostic:
 8. Map memory only if the project needs cross-session or cross-tool continuity. Keep markdown canonical and generated indexes disposable.
 9. For UI projects, map the design reference layer to the target design system, exported HTML references, screenshots, prototype suite, and implementation workflow.
 10. Add a short adapter note that explains what was adopted, what was intentionally skipped, and which source mirrors are examples only.
+
+Recommended first-copy standards:
+
+- [code-naming-protocol.md](./portable-workspace-system/01-standards/engineering/code-naming-protocol.md)
+- [document-naming-protocol.md](./portable-workspace-system/01-standards/engineering/document-naming-protocol.md)
+- [guidance-asset-naming-protocol.md](./portable-workspace-system/01-standards/engineering/guidance-asset-naming-protocol.md)
+- [folder-structure-protocol.md](./portable-workspace-system/01-standards/engineering/folder-structure-protocol.md)
+- [source-of-truth-protocol.md](./portable-workspace-system/01-standards/engineering/source-of-truth-protocol.md)
+- [rule-hierarchy-and-safety-boundaries.md](./portable-workspace-system/01-standards/rules/rule-hierarchy-and-safety-boundaries.md)
+- [credential-and-secret-boundary-protocol.md](./portable-workspace-system/01-standards/protocols/credential-and-secret-boundary-protocol.md)
+- [public-bundle-export-protocol.md](./portable-workspace-system/01-standards/protocols/public-bundle-export-protocol.md)
+- [validation-evidence-protocol.md](./portable-workspace-system/01-standards/protocols/validation-evidence-protocol.md)
+- [tool-and-mcp-adapter-protocol.md](./portable-workspace-system/01-standards/protocols/tool-and-mcp-adapter-protocol.md)
+- [prompt-pack-execution-workflow.md](./portable-workspace-system/01-standards/workflows/prompt-pack-execution-workflow.md)
+- [feature-gap-closure-workflow.md](./portable-workspace-system/01-standards/workflows/feature-gap-closure-workflow.md)
+- [ui-change-verification-workflow.md](./portable-workspace-system/01-standards/workflows/ui-change-verification-workflow.md)
 
 ## Model-Agnostic Agent Roles
 
@@ -137,6 +155,7 @@ Memory pattern: <none / project-local / workspace-local>
 
 - Bundle-level docs use neutral source-application and agent-surface language.
 - Source mirrors keep original app and tool names only as provenance or examples.
+- Source-derived examples are sanitized before public export.
 - Every project-specific rule has an owning live doc in the target repo.
 - Every important workflow names inputs, outputs, quality checks, and stop conditions.
 - Every important rule has a validation interface or documented manual check.

@@ -52,9 +52,26 @@ workspace-root/
   01-standards/
     README.md
     engineering/
+      code-naming-protocol.md
+      document-naming-protocol.md
+      guidance-asset-naming-protocol.md
+      folder-structure-protocol.md
+      source-of-truth-protocol.md
     rules/
+      rule-hierarchy-and-safety-boundaries.md
     protocols/
+      credential-and-secret-boundary-protocol.md
+      public-bundle-export-protocol.md
+      validation-evidence-protocol.md
+      tool-and-mcp-adapter-protocol.md
+      memory-continuity-protocol.md
+      audit-corpus-handling-protocol.md
     workflows/
+      prompt-pack-execution-workflow.md
+      feature-gap-closure-workflow.md
+      ui-change-verification-workflow.md
+      reference-library-curation-workflow.md
+      api-readiness-workflow.md
     prompts/
     templates/
     skills/
@@ -158,6 +175,8 @@ The standards library stores durable guidance by artifact type:
 Why it works: the same concept always has the same home. A future agent can ask "is this a rule, protocol, workflow, template, or skill?" and route the artifact predictably.
 
 Guidance assets should use responsibility names instead of vague labels. A future agent should be able to tell the domain, action, object, and artifact kind from the name.
+
+The copyable skeleton includes concrete standards for code naming, document naming, guidance-asset naming, folder structure, SSOT ownership, rule hierarchy, credential boundaries, public export safety, validation evidence, memory continuity, audit-corpus handling, prompt-pack execution, feature-gap closure, UI verification, reference-library curation, and API readiness.
 
 ## Local Folder Contract
 
@@ -283,6 +302,26 @@ The neutral skeleton includes:
 - [workspace-hub-projects-template.json](./portable-workspace-system/00-command-center/workspace-hub-projects-template.json)
 - [workspace-hub-project-schema-template.json](./portable-workspace-system/00-command-center/workspace-hub-project-schema-template.json)
 - [guidance-asset-types.md](./portable-workspace-system/01-standards/guidance-asset-types.md)
+- [code-naming-protocol.md](./portable-workspace-system/01-standards/engineering/code-naming-protocol.md)
+- [document-naming-protocol.md](./portable-workspace-system/01-standards/engineering/document-naming-protocol.md)
+- [guidance-asset-naming-protocol.md](./portable-workspace-system/01-standards/engineering/guidance-asset-naming-protocol.md)
+- [folder-structure-protocol.md](./portable-workspace-system/01-standards/engineering/folder-structure-protocol.md)
+- [source-of-truth-protocol.md](./portable-workspace-system/01-standards/engineering/source-of-truth-protocol.md)
+- [rule-hierarchy-and-safety-boundaries.md](./portable-workspace-system/01-standards/rules/rule-hierarchy-and-safety-boundaries.md)
+- [credential-and-secret-boundary-protocol.md](./portable-workspace-system/01-standards/protocols/credential-and-secret-boundary-protocol.md)
+- [public-bundle-export-protocol.md](./portable-workspace-system/01-standards/protocols/public-bundle-export-protocol.md)
+- [tool-and-mcp-adapter-protocol.md](./portable-workspace-system/01-standards/protocols/tool-and-mcp-adapter-protocol.md)
+- [validation-evidence-protocol.md](./portable-workspace-system/01-standards/protocols/validation-evidence-protocol.md)
+- [memory-continuity-protocol.md](./portable-workspace-system/01-standards/protocols/memory-continuity-protocol.md)
+- [audit-corpus-handling-protocol.md](./portable-workspace-system/01-standards/protocols/audit-corpus-handling-protocol.md)
+- [prompt-pack-execution-workflow.md](./portable-workspace-system/01-standards/workflows/prompt-pack-execution-workflow.md)
+- [feature-gap-closure-workflow.md](./portable-workspace-system/01-standards/workflows/feature-gap-closure-workflow.md)
+- [ui-change-verification-workflow.md](./portable-workspace-system/01-standards/workflows/ui-change-verification-workflow.md)
+- [reference-library-curation-workflow.md](./portable-workspace-system/01-standards/workflows/reference-library-curation-workflow.md)
+- [api-readiness-workflow.md](./portable-workspace-system/01-standards/workflows/api-readiness-workflow.md)
+- [agent-enablement-adapter-template.md](./portable-workspace-system/01-standards/templates/agent-enablement-adapter-template.md)
+- [protocol-template.md](./portable-workspace-system/01-standards/templates/protocol-template.md)
+- [workflow-template.md](./portable-workspace-system/01-standards/templates/workflow-template.md)
 - [workspace-health-checklist.md](./portable-workspace-system/scripts/workspace-health-checklist.md)
 
 ## Adoption Sequence
